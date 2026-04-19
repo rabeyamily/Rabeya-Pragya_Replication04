@@ -1,0 +1,12 @@
+{
+  "model": "gpt-4o-mini",
+  "evaluation": "ground_truth_exact_match",
+  "d4j_v12": {
+    "fixed": 0,
+    "fixed_ids": []
+  },
+  "d4j_v20": {
+    "fixed": 0,
+    "fixed_ids": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "paper": {
+    "GPT-3.5-turbo": {
+      "v12_direct": 43,
+      "v12_gr": 10,
+      "v12_total": 53,
+      "v20_direct": 45,
+      "v20_gr": 8,
+      "v20_total": 53
+    },
+    "StarCoder": {
+      "v12_direct": 42,
+      "v12_gr": 13,
+      "v12_total": 55,
+      "v20_direct": 44,
+      "v20_gr": 10,
+      "v20_total": 54
+    },
+    "LLaMA-2-13B": {
+      "v12_direct": 19,
+      "v12_gr": 6,
+      "v12_total": 25,
+      "v20_direct": 18,
+      "v20_gr": 6,
+      "v20_total": 24
+    },
+    "CodeLLaMA-7B": {
+      "v12_direct": 39,
+      "v12_gr": 11,
+      "v12_total": 50,
+      "v20_direct": 34,
+      "v20_gr": 9,
+      "v20_total": 43
+    }
+  },
+  "gpt4o_mini": {
+    "d4j_v12_direct": 0,
+    "d4j_v20_direct": 0
+  }
+}

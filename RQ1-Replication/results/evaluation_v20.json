@@ -1,0 +1,1305 @@
+{
+  "fixed": [],
+  "not_fixed": [
+    "Cli-11",
+    "Cli-12",
+    "Cli-14",
+    "Cli-15",
+    "Cli-17",
+    "Cli-19",
+    "Cli-20",
+    "Cli-23",
+    "Cli-24",
+    "Cli-25",
+    "Cli-26",
+    "Cli-27",
+    "Cli-28",
+    "Cli-29",
+    "Cli-32",
+    "Cli-35",
+    "Cli-37",
+    "Cli-38",
+    "Cli-4",
+    "Cli-40",
+    "Cli-5",
+    "Cli-8",
+    "Cli-9",
+    "Codec-10",
+    "Codec-15",
+    "Codec-17",
+    "Codec-18",
+    "Codec-2",
+    "Codec-3",
+    "Codec-4",
+    "Codec-5",
+    "Codec-6",
+    "Codec-7",
+    "Codec-9",
+    "Collections-26",
+    "Compress-1",
+    "Compress-10",
+    "Compress-11",
+    "Compress-12",
+    "Compress-13",
+    "Compress-14",
+    "Compress-15",
+    "Compress-16",
+    "Compress-17",
+    "Compress-18",
+    "Compress-19",
+    "Compress-21",
+    "Compress-23",
+    "Compress-24",
+    "Compress-25",
+    "Compress-26",
+    "Compress-27",
+    "Compress-28",
+    "Compress-30",
+    "Compress-31",
+    "Compress-32",
+    "Compress-35",
+    "Compress-36",
+    "Compress-37",
+    "Compress-38",
+    "Compress-40",
+    "Compress-41",
+    "Compress-44",
+    "Compress-45",
+    "Compress-46",
+    "Compress-5",
+    "Compress-7",
+    "Compress-8",
+    "Csv-1",
+    "Csv-10",
+    "Csv-11",
+    "Csv-14",
+    "Csv-15",
+    "Csv-2",
+    "Csv-3",
+    "Csv-4",
+    "Csv-5",
+    "Csv-6",
+    "Csv-9",
+    "Gson-11",
+    "Gson-12",
+    "Gson-13",
+    "Gson-15",
+    "Gson-16",
+    "Gson-17",
+    "Gson-18",
+    "Gson-5",
+    "Gson-6",
+    "JacksonCore-11",
+    "JacksonCore-15",
+    "JacksonCore-20",
+    "JacksonCore-21",
+    "JacksonCore-23",
+    "JacksonCore-25",
+    "JacksonCore-26",
+    "JacksonCore-3",
+    "JacksonCore-4",
+    "JacksonCore-5",
+    "JacksonCore-6",
+    "JacksonCore-7",
+    "JacksonCore-8",
+    "JacksonDatabind-1",
+    "JacksonDatabind-100",
+    "JacksonDatabind-101",
+    "JacksonDatabind-102",
+    "JacksonDatabind-107",
+    "JacksonDatabind-11",
+    "JacksonDatabind-112",
+    "JacksonDatabind-12",
+    "JacksonDatabind-16",
+    "JacksonDatabind-17",
+    "JacksonDatabind-19",
+    "JacksonDatabind-24",
+    "JacksonDatabind-27",
+    "JacksonDatabind-28",
+    "JacksonDatabind-33",
+    "JacksonDatabind-34",
+    "JacksonDatabind-35",
+    "JacksonDatabind-37",
+    "JacksonDatabind-39",
+    "JacksonDatabind-42",
+    "JacksonDatabind-44",
+    "JacksonDatabind-45",
+    "JacksonDatabind-46",
+    "JacksonDatabind-47",
+    "JacksonDatabind-49",
+    "JacksonDatabind-5",
+    "JacksonDatabind-51",
+    "JacksonDatabind-54",
+    "JacksonDatabind-57",
+    "JacksonDatabind-58",
+    "JacksonDatabind-6",
+    "JacksonDatabind-62",
+    "JacksonDatabind-64",
+    "JacksonDatabind-67",
+    "JacksonDatabind-7",
+    "JacksonDatabind-70",
+    "JacksonDatabind-71",
+    "JacksonDatabind-74",
+    "JacksonDatabind-76",
+    "JacksonDatabind-8",
+    "JacksonDatabind-82",
+    "JacksonDatabind-83",
+    "JacksonDatabind-85",
+    "JacksonDatabind-88",
+    "JacksonDatabind-9",
+    "JacksonDatabind-91",
+    "JacksonDatabind-93",
+    "JacksonDatabind-96",
+    "JacksonDatabind-97",
+    "JacksonDatabind-98",
+    "JacksonDatabind-99",
+    "JacksonXml-1",
+    "JacksonXml-3",
+    "JacksonXml-4",
+    "JacksonXml-5",
+    "Jsoup-1",
+    "Jsoup-10",
+    "Jsoup-13",
+    "Jsoup-15",
+    "Jsoup-19",
+    "Jsoup-2",
+    "Jsoup-20",
+    "Jsoup-24",
+    "Jsoup-26",
+    "Jsoup-27",
+    "Jsoup-32",
+    "Jsoup-33",
+    "Jsoup-34",
+    "Jsoup-35",
+    "Jsoup-37",
+    "Jsoup-38",
+    "Jsoup-39",
+    "Jsoup-40",
+    "Jsoup-41",
+    "Jsoup-42",
+    "Jsoup-43",
+    "Jsoup-45",
+    "Jsoup-46",
+    "Jsoup-47",
+    "Jsoup-48",
+    "Jsoup-49",
+    "Jsoup-5",
+    "Jsoup-50",
+    "Jsoup-51",
+    "Jsoup-53",
+    "Jsoup-54",
+    "Jsoup-55",
+    "Jsoup-57",
+    "Jsoup-59",
+    "Jsoup-6",
+    "Jsoup-61",
+    "Jsoup-62",
+    "Jsoup-64",
+    "Jsoup-68",
+    "Jsoup-70",
+    "Jsoup-72",
+    "Jsoup-75",
+    "Jsoup-76",
+    "Jsoup-77",
+    "Jsoup-80",
+    "Jsoup-82",
+    "Jsoup-84",
+    "Jsoup-85",
+    "Jsoup-86",
+    "Jsoup-88",
+    "Jsoup-89",
+    "Jsoup-90",
+    "Jsoup-93",
+    "JxPath-10",
+    "JxPath-12",
+    "JxPath-21",
+    "JxPath-22",
+    "JxPath-5",
+    "JxPath-6",
+    "JxPath-8"
+  ],
+  "no_output": [],
+  "missing": [],
+  "details": {
+    "Cli-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-12": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-14": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-17": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-19": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-20": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-23": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-24": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-25": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-26": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-27": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-28": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-29": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-32": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-35": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-37": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-38": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-4": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-40": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-8": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Cli-9": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-10": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-17": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-18": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-2": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-3": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-4": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-7": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Codec-9": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Collections-26": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-1": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-10": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-12": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-13": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-14": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-16": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-17": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-18": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-19": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-21": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-23": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-24": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-25": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-26": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-27": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-28": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-30": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-31": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-32": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-35": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-36": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-37": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-38": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-40": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-41": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-44": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-45": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-46": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-7": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Compress-8": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-1": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-10": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-14": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-2": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-3": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-4": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Csv-9": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-12": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-13": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-16": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-17": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-18": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Gson-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-20": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-21": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-23": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-25": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-26": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-3": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-4": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-7": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonCore-8": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-1": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-100": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-101": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-102": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-107": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-11": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-112": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-12": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-16": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-17": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-19": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-24": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-27": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-28": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-33": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-34": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-35": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-37": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-39": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-42": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-44": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-45": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-46": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-47": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-49": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-51": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-54": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-57": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-58": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-62": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-64": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-67": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-7": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-70": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-71": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-74": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-76": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-8": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-82": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-83": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-85": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-88": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-9": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-91": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-93": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-96": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-97": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-98": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonDatabind-99": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonXml-1": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonXml-3": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonXml-4": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JacksonXml-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-1": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-10": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-13": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-15": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-19": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-2": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-20": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-24": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-26": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-27": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-32": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-33": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-34": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-35": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 2
+    },
+    "Jsoup-37": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-38": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 2
+    },
+    "Jsoup-39": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-40": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-41": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-42": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-43": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-45": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-46": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-47": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-48": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-49": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-50": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-51": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-53": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-54": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-55": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-57": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-59": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-61": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-62": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-64": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-68": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-70": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-72": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-75": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-76": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 2
+    },
+    "Jsoup-77": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-80": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-82": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-84": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-85": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-86": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-88": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-89": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-90": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "Jsoup-93": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-10": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-12": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-21": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-22": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-5": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-6": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    },
+    "JxPath-8": {
+      "fixed": false,
+      "status": "not_fixed",
+      "n_unique": 3
+    }
+  }
+}
