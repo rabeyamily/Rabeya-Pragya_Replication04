@@ -8,7 +8,12 @@
   - The original paper introduces GiantRepair, a hybrid Automated Program Repair (APR) approach that first generates patch candidates using LLMs (GPT-3.5-turbo, StarCoder, LLaMA-2-13B, CodeLLaMA-7B), then constructs patch skeletons from those candidates and instantiates them with context-aware program analysis to improve correctness. The method is evaluated on Defects4J v1.2 (267 bugs) and v2.0 (216 bugs) under both perfect and automated fault localization settings.
   - This replication study firstly focuses on RQ1: replicating the direct LLM patch-generation step (Steps 3–5 of the pipeline) using GPT-4o-mini as a newer, more cost-efficient model. We use the same `single_function_repair.json` dataset and few-shot prompt from the original paper, generate 10 patch candidates per bug, evaluate using ground-truth exact-match comparison, and report results in the same Table 2 format alongside the paper's original numbers.
 
-  - Pragya's part
+  - The second part of this replication focuses on manual patch analysis. 
+  Ten patches were randomly selected from the GiantRepair artifact across 
+  multiple model folders (GiantRepair_gpt35, GiantRepair_starcoder, 
+  GiantRepair_codellama). For each patch, the generated fix was compared 
+  against the original buggy method to evaluate correctness, cleanliness, 
+  and whether the root cause was addressed.
 ---
 
 ## Repository Structure
@@ -172,3 +177,4 @@ fix. See `notes/replication_notes.md` for a full explanation.
     - Exploring the `single_function_repair.json` dataset structure and understanding the data fields (`buggy`, `fix`, bug IDs)
     - Debugging the main replication script (`rq1_replication.py`)
     - Debugging OpenAI API integration (rate limit handling, token limits, response parsing)
+    - Also used to understand the initial bugs when doing manual patch analysis 
