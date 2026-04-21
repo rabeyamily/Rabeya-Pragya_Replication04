@@ -1,4 +1,4 @@
-### 1. Project Title and Overview
+# Replication Study: GiantRepair
 
 - **Paper Title**: Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis
 - **Authors**: Fengjie Li, Jiajun Jiang, Jiajun Sun, and Hongyu Zhang
@@ -9,72 +9,162 @@
   - This replication study firstly focuses on RQ1: replicating the direct LLM patch-generation step (Steps 3–5 of the pipeline) using GPT-4o-mini as a newer, more cost-efficient model. We use the same `single_function_repair.json` dataset and few-shot prompt from the original paper, generate 10 patch candidates per bug, evaluate using ground-truth exact-match comparison, and report results in the same Table 2 format alongside the paper's original numbers.
 
   - Pragya's part
+---
 
-### 2. Repository Structure
+## Repository Structure
 
 ```
-Readme.md                          # This file — documentation for the repository
-.env                               # API key configuration (not committed)
-RQ1-Replication/
-  rq1_replication.py               # Main replication script (generate, evaluate, table)
-  prompt.py                        # Few-shot prompt template (JAVA_LONG_VARY_PROMPT) from the paper
-  parse_d4j.py                     # Helper to pick the smallest in-project example fix
-  api_request.py                   # Low-level OpenAI API wrapper
-  single_function_repair.json      # Dataset: 483 bugs (D4J v1.2 + v2.0) with buggy/fix pairs
-  requirements.txt                 # Python dependencies
-  results/
-    patches/                       # Generated patch JSON files — one per bug (output of `generate`)
-    evaluation_v12.json            # Per-bug evaluation results for Defects4J v1.2
-    evaluation_v20.json            # Per-bug evaluation results for Defects4J v2.0
-    summary.json                   # Aggregated fix counts for both versions
-    table2.json                    # Full Table 2 data (paper models + our GPT-4o-mini results)
+.
+├── README.md                        ← this file
+├── datasets/
+│   └── single_function_repair.json  ← Defects4J bug dataset (483 bugs)
+├── replication_scripts/
+│   ├── rq1_replication.py           ← main replication script
+│   ├── requirements.txt             ← Python dependencies
+│   ├── prompt.py                    ← 2-shot prompt template (from artifact)
+│   ├── parse_d4j.py                 ← dataset parsing helper (from artifact)
+│   └── api_request.py               ← original API wrapper (unused; kept for reference)
+├── outputs/
+│   ├── patches/                     ← 483 JSON files, one per bug
+│   ├── evaluation_v12.json          ← per-bug evaluation results, D4J v1.2
+│   ├── evaluation_v20.json          ← per-bug evaluation results, D4J v2.0
+│   ├── summary.json                 ← aggregated fix counts
+│   └── table2.json                  ← Table 2 data
+├── logs/
+│   └── run_log.md                   ← run timeline, errors encountered, timings
+└── notes/
+    └── replication_notes.md         ← methodological decisions and discrepancies
 ```
 
-### 3. Setup Instructions
+---
 
-- **Prerequisites**:
-  - OS: macOS, Linux, or Windows (tested on macOS 15)
-  - Python 3.10 or higher
-  - An OpenAI API key with access to `gpt-4o-mini`
-  - Required Python packages (see `RQ1-Replication/requirements.txt`):
-    - `openai >= 1.0.0`
-    - `python-dotenv >= 1.0.0`
-    - `tqdm >= 4.65.0`
+## Dataset
 
-- **Installation Steps**:
-  For RQ 1:
-  1. Clone this repository and navigate to the project folder:
-     ```bash
-     cd Rabeya-Pragya_Replication04
-     ```
-  2. Install dependencies:
-     ```bash
-     pip install -r RQ1-Replication/requirements.txt
-     ```
-  3. Create a `.env` file in the project root and add your OpenAI API key:
-     ```
-     OpenAI_API_KEY=sk-...
-     ```
-  4. Run the replication from the `RQ1-Replication/` directory:
-     ```bash
-     cd RQ1-Replication
+`datasets/single_function_repair.json` is taken directly from the authors'
+artifact (`d4j-info/single_function_repair.json`).
 
-     # Generate patches for Defects4J v1.2 and v2.0 (10 chances per bug)
-     python rq1_replication.py generate --version v12
-     python rq1_replication.py generate --version v20
+It contains **483 single-function Defects4J bugs**:
+- **267 bugs** from Defects4J v1.2 (Chart, Closure, Lang, Math, Mockito, Time)
+- **216 bugs** from Defects4J v2.0 (Cli, Codec, Collections, Compress, Csv,
+  Gson, JacksonCore, JacksonDatabind, JacksonXml, Jsoup, JxPath)
 
-     # Evaluate patches against ground-truth developer fixes
-     python rq1_replication.py evaluate
+Each entry contains the buggy method, the ground-truth fix, and project
+metadata.
 
-     # Print Table 2
-     python rq1_replication.py table
-     ```
-  5. For a quick test (3 bugs, 2 API calls each):
-     ```bash
-     python rq1_replication.py generate --version v12 --limit 3 --chances 2
-     ```
+---
 
-### 4. GenAI Usage
+## Replication Scripts
+
+All scripts live in `replication_scripts/`. Run them from that directory.
+
+### Setup
+
+```bash
+cd replication_scripts
+python3 -m venv ../.venv          # create a virtual environment (once)
+source ../.venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create a `.env` file at the repository root containing your OpenAI key:
+
+```
+OpenAI_API_KEY=sk-...
+```
+
+### Running the full pipeline
+
+```bash
+# From inside replication_scripts/
+python3 rq1_replication.py all --chances 3
+```
+
+This runs the four steps sequentially:
+1. **generate (v1.2)** — calls GPT-4o-mini for each D4J v1.2 bug
+2. **generate (v2.0)** — calls GPT-4o-mini for each D4J v2.0 bug
+3. **evaluate** — compares generated patches to ground truth
+4. **table** — prints Table 2 and writes `outputs/table2.json`
+
+If interrupted, it resumes automatically (already-done bugs are skipped).
+
+### Running individual steps
+
+```bash
+# Generate patches for v1.2 only
+python3 rq1_replication.py generate --version v12 --chances 3
+
+# Generate patches for v2.0 only
+python3 rq1_replication.py generate --version v20 --chances 3
+
+# Evaluate generated patches
+python3 rq1_replication.py evaluate
+
+# Print Table 2
+python3 rq1_replication.py table
+```
+
+### Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--chances N` | 10 | Number of patches to generate per bug |
+| `--dataset PATH` | `../datasets/single_function_repair.json` | Dataset file |
+| `--patch_dir PATH` | `../outputs/patches` | Where to save patch JSON files |
+| `--out_dir PATH` | `../outputs` | Where to save evaluation output |
+
+### Key implementation differences from the original artifact
+
+| Aspect | Original paper | This replication |
+|--------|----------------|------------------|
+| Model | GPT-3.5-turbo-0301 | **GPT-4o-mini** |
+| Sampling attempts | 10 per bug | 3 per bug (rate limit mitigation) |
+| OpenAI client | `openai 0.x` (deprecated) | `openai >= 1.0.0` |
+| Evaluation | Defects4J test-suite | **Ground-truth exact-match** |
+| Rate-limit handling | Flat 60 s wait | Exponential back-off (15→120 s) |
+
+---
+
+## Outputs
+
+All generated results are in `outputs/`.
+
+- `patches/<bug_id>.json` — raw model outputs for each bug
+- `evaluation_v12.json` — `{bug_id: {fixed: bool, ...}}` for each v1.2 bug
+- `evaluation_v20.json` — same for v2.0
+- `summary.json` — overall counts
+- `table2.json` — Table 2 values used in the report
+
+### Results summary
+
+| Benchmark | Bugs | Fixed (exact-match) | Fixed (paper, GPT-3.5 raw) |
+|-----------|------|---------------------|----------------------------|
+| D4J v1.2  | 267  | 0                   | 43                         |
+| D4J v2.0  | 216  | 0                   | 45                         |
+
+The 0-fix result is expected. Exact-match is a known conservative metric;
+the paper uses test-suite validation which accepts any semantically equivalent
+fix. See `notes/replication_notes.md` for a full explanation.
+
+---
+
+## Logs
+
+`logs/run_log.md` documents:
+- Two runs (one failed due to rate limits, one successful)
+- Total wall-clock time: **~17 hours**
+- API call count: ~1,449 (483 bugs × 3 chances)
+- Per-project timing and anomalies
+
+---
+
+## Notes
+
+`notes/replication_notes.md` records:
+- Rationale for each methodological choice
+- Full discrepancy table between paper and replication
+- Suggestions for future replicators
+
+### GenAI Usage
 
 **GenAI Usage**: Took help from claude to understand the paper artifact repository's structure and code and debugging.
   - **How it was used**:

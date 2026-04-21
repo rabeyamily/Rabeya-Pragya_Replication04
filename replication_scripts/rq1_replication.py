@@ -363,9 +363,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    p.add_argument("--dataset",    default="single_function_repair.json")
-    p.add_argument("--patch_dir",  default="results/patches")
-    p.add_argument("--out_dir",    default="results")
+    p.add_argument("--dataset",    default="../datasets/single_function_repair.json")
+    p.add_argument("--patch_dir",  default="../outputs/patches")
+    p.add_argument("--out_dir",    default="../outputs")
 
     sub = p.add_subparsers(dest="cmd", required=True)
 
